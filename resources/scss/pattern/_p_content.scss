@@ -1,7 +1,7 @@
 // 사이트 컨텐츠 내용
-// :root {
-//   --swiper-theme-color: red;
-// }
+:root {
+  --swiper-theme-color: red;
+}
 // 전역 스타일
 .swiper {
   width: 100%;
@@ -172,9 +172,14 @@
   left: 53%;
   transform: translate(-50%, -62%);
 }
-.txt-all {
+
+.box1 {
   font-family : "hakgyoansimDunggeunmisoTTF-B";
 }
+.box2 {
+  font-family : "hakgyoansimDunggeunmisoTTF-B";
+}
+
 .t01 {
   position: relative;
   display: flex;
@@ -210,8 +215,12 @@
   color: $orange-5;
 }
 
-.box2 .txt-g {
+.box2 .txt-g{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.box2 {
+  margin-top: 100px;
 }

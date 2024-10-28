@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "GmarketSansMedium";
   src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff") format("woff");
@@ -11,278 +10,324 @@
   font-weight: 700;
   font-style: normal;
 }
-/* reset */
-body,
-div,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-code,
-form,
-fieldset,
-legend,
-textarea,
-p,
-blockquote,
-th,
-td,
-input,
-select,
-button,
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-fieldset,
-img {
-  border: 0 none;
-}
-
-dl,
-ul,
-ol,
-menu,
-li {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after {
-  content: "";
-  content: none;
-}
-
-q:before, q:after {
-  content: "";
-  content: none;
-}
-
-input,
-select,
-textarea {
-  font-size: 100%;
-  vertical-align: middle;
-}
-
-button {
-  font-size: 100%;
-  vertical-align: middle;
-  border: 0 none;
-  background-color: transparent;
-  cursor: pointer;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
+html,
 body {
-  -webkit-text-size-adjust: none;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-family: "Pretendard GOV", sans-serif;
+  color: var(--gray-90);
+  font-weight: 400;
+  line-height: 1.5;
+  word-break: keep-all;
+  word-wrap: break-word;
+  -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
+  justify-content: center;
 }
 
-/* 뷰표트 변환시 폰트크기 자동확대 방지 */
-input[type=text], input[type=password], input[type=submit], input[type=search] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  border-radius: 0;
-}
-input:checked[type=checkbox] {
-  background-color: #e4e4e4;
-  -webkit-appearance: checkbox;
-     -moz-appearance: checkbox;
-          appearance: checkbox;
-}
-
-button {
-  -webkit-appearance: button;
-     -moz-appearance: button;
-          appearance: button;
-  border-radius: 0;
-}
-
-input[type=button], input[type=submit], input[type=reset], input[type=file] {
-  -webkit-appearance: button;
-     -moz-appearance: button;
-          appearance: button;
-  border-radius: 0;
-}
-input[type=search]::-webkit-search-cancel-button {
-  -webkit-appearance: none;
-          appearance: none;
-}
-
-/* 기본 폰트 설정 */
-/* mobile */
 html {
   font-size: 62.5%;
 }
 
 body {
   font-size: 1.7rem;
-  line-height: 1.5;
-  font-family: "Noto Sans KR", sans-serif;
-  color: #1d1d1d;
-  font-weight: 400;
+  overflow-x: hidden;
 }
 
-a {
-  color: #1d1d1d;
-  text-decoration: none;
-}
-a:active, a:hover {
-  text-decoration: none;
+*:focus {
+  outline-offset: -0.4rem;
+  outline: 2px solid #246beb;
 }
 
-@media screen and (min-width: 1280px) {
-  a {
-    color: #1d1d1d;
-    text-decoration: none;
-  }
-  a:active, a:hover {
-    text-decoration: underline;
-  }
+::-moz-selection {
+  background: var(--secondary);
+  color: var(--white);
 }
-address,
-caption,
-cite,
-code,
-dfn,
+
+::selection {
+  background: #003675;
+  color: var(--white);
+}
+
+body,
+div,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+textarea,
+a,
+button,
+select,
+ul,
+li,
+span,
 em,
-var {
-  font-style: normal;
-  font-weight: normal;
+label,
+:before,
+:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: none;
+  font-family: inherit;
+  line-height: 1.5;
+  letter-spacing: inherit;
 }
 
-hr {
-  display: none;
+pre {
+  font-family: inherit;
 }
 
-input[type=password] {
-  font-family: "Malgun Gothic";
+input,
+textarea,
+a,
+button,
+select,
+span,
+label,
+:before,
+:after {
+  font-size: inherit;
+  font-weight: inherit;
 }
 
-/* 웹폰트 사용시 점이 안보임 - 기본 폰트 사용  */
-/* skipnavigation */
-#u-skip {
-  position: relative;
-  z-index: 3000;
-}
-#u-skip a {
-  position: absolute;
-  top: -35px;
-  left: 0;
-  right: 0;
-  display: inline-block;
-  padding: 7px 10px 5px;
-  background: #1d1d1d;
-  color: #fff;
-  text-decoration: none;
-  text-align: center;
-  opacity: 0;
-}
-#u-skip a:focus {
-  top: 0;
-  opacity: 1;
-  z-index: 1000;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-weight: 700;
 }
 
-/* 이미지 스프라이트 */
-.img-g {
-  display: inline-block;
-  overflow: hidden;
-  background: url(../../images/comm/img-comm.png) no-repeat;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+fieldset {
+  border: 0;
+}
+
+fieldset {
+  min-width: 100%;
+}
+
+img {
+  max-width: 100%;
   vertical-align: top;
 }
 
-/* 이미지 */
-/* global */
-.ir-pm {
-  display: block;
-  overflow: hidden;
-  font-size: 0px;
-  line-height: 0;
-  text-indent: -9999px;
+ul,
+ol {
+  list-style: none;
 }
 
-/* 사용된 이미지내 의미있는 텍스트의 대체텍스트를 제공할때 */
-.ir-wa {
-  display: block;
-  overflow: hidden;
-  position: relative;
-  z-index: -10;
-  width: 100%;
-  height: 100%;
+em,
+address,
+i {
+  font-style: normal;
 }
 
-/* 중요한 이미지 대체텍스트로 이미지off시에도 대체 텍스트를 보여주고자 할때 */
+a,
+a:hover,
+a:active,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input[type=submit],
+input[type=button] {
+  overflow: visible;
+  margin: 0;
+  background-color: transparent;
+  border: none;
+  -webkit-appearance: button;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type=text],
+input[type=tel],
+input[type=password],
+input[type=file],
+input[type=number],
+input[type=email],
+input[type=date],
+input[type=search],
+textarea {
+  box-shadow: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+caption {
+  position: static !important;
+  margin: 0 !important;
+}
+
+table {
+  table-layout: fixed;
+  max-width: none;
+  width: auto;
+  min-width: 100%;
+  border-collapse: collapse;
+}
+
+[role=button] {
+  cursor: pointer;
+}
+
+.img img {
+  min-width: 100%;
+  max-width: 100%;
+}
+
+.img.bg-img {
+  background-size: cover;
+}
+
 .blind,
-caption,
-legend {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-}
-
-/* 대체텍스트가 아닌 접근성을 위한 숨김텍스트를 제공할때 */
-.f_l {
-  float: left;
-}
-
-.f_r {
-  float: right;
-}
-
-.show {
-  display: block;
+hr,
+.sr-only,
+legend,
+caption {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
 }
 
 .hide {
-  display: none;
+  display: none !important;
 }
 
-.tbl {
-  border-collapse: collapse;
-  border-spacing: 0;
+.show {
+  display: block !important;
 }
 
-/* 테이블 초기화 */
-.clearfix {
-  display: block;
-  overflow: visible;
-  width: auto;
-  clear: both;
-  zoom: 1;
-}
-.clearfix:after {
-  display: block;
-  visibility: hidden;
-  height: 0;
-  font-size: 0;
-  clear: both;
-  content: "";
+.al {
+  text-align: left !important;
 }
 
+.ac {
+  text-align: center !important;
+}
+
+.ar {
+  text-align: right !important;
+}
+
+@media (max-width: 599px) {
+  .pc-only {
+    display: none !important;
+  }
+  .pc-only.read {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+  }
+  .mob-line {
+    display: block;
+    line-height: inherit;
+  }
+}
+@media (min-width: 600px) {
+  .mob-only {
+    display: none !important;
+  }
+  .mob-only.read {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+  }
+  .pc-line {
+    display: block;
+    line-height: inherit;
+  }
+}
+@font-face {
+  font-family: "HakgyoansimDunggeunmisoTTF-B";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408-5@1.0/HakgyoansimDunggeunmisoTTF-B.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
 .bg-gray {
   background-color: #f8f8f8;
 }
@@ -454,7 +499,7 @@ legend {
   position: relative;
 }
 #gnb .gnb__depth1 > li:hover > a > span {
-  color: #ff5722;
+  color: #F46A21;
 }
 #gnb .gnb__depth1 > li:hover > a > span::after {
   width: 100%;
@@ -492,7 +537,7 @@ legend {
   transform: translateX(-50%);
   width: 0;
   height: 2px;
-  background: #ff5722;
+  background: #F46A21;
   transition: all 0.4s;
 }
 #gnb .gnb__depth2 {
@@ -523,7 +568,7 @@ legend {
 }
 #gnb .gnb__depth2 a:hover {
   font-weight: 700;
-  color: #ff5722;
+  color: #F46A21;
 }
 
 .util {
@@ -608,6 +653,10 @@ legend {
 #nav-all.active {
   display: block;
   left: 0;
+}
+
+:root {
+  --swiper-theme-color: red;
 }
 
 .swiper {
@@ -775,7 +824,11 @@ legend {
   transform: translate(-50%, -62%);
 }
 
-.txt-all {
+.box1 {
+  font-family: "hakgyoansimDunggeunmisoTTF-B";
+}
+
+.box2 {
   font-family: "hakgyoansimDunggeunmisoTTF-B";
 }
 
@@ -785,7 +838,7 @@ legend {
   margin-top: -1430px;
   margin-left: 350px;
   font-size: 130px;
-  color: #f5f5f5;
+  color: #EE3212;
 }
 
 .t02 {
@@ -814,11 +867,15 @@ legend {
   margin-top: -130px;
   margin-left: 1030px;
   font-size: 130px;
-  color: #f5f5f5;
+  color: #EE3212;
 }
 
 .box2 .txt-g {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.box2 {
+  margin-top: 100px;
 }/*# sourceMappingURL=styles.css.map */
