@@ -27,3 +27,13 @@ var swiper = new Swiper(".slide-studio", {
     },
   },
 });
+
+var swiper = new Swiper(".slide-box3", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  centeredSlides: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

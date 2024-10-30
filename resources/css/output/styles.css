@@ -836,10 +836,6 @@ caption {
   font-family: "hakgyoansimDunggeunmisoTTF-B";
 }
 
-.box2 {
-  font-family: "hakgyoansimDunggeunmisoTTF-B";
-}
-
 .txt-c {
   font-family: "//fonts.googleapis.com/earlyaccess/notosanskr.css";
 }
@@ -886,10 +882,6 @@ caption {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.box2 {
-  padding-top: 30%;
 }
 
 .box2 .txt-t h2 {
@@ -969,26 +961,6 @@ caption {
   color: white;
 }
 
-.img03 {
-  display: flex;
-  justify-content: flex-end;
-  z-index: 5;
-  margin-top: -40%;
-  margin-left: 70%;
-}
-
-.img05 {
-  width: 240px;
-  margin-top: -40%;
-  margin-left: 11%;
-}
-
-.img06 {
-  width: 240px;
-  margin-top: -50%;
-  margin-left: 50%;
-}
-
 .cbox {
   box-sizing: border-box;
   margin-top: -20%;
@@ -1001,7 +973,12 @@ caption {
   color: white;
 }
 
+.cardnews1 {
+  position: relative;
+}
+
 .ctxt02 {
+  position: relative;
   font-weight: 500;
   z-index: 5;
   box-sizing: border-box;
@@ -1013,11 +990,82 @@ caption {
   color: white;
 }
 
-.img04 {
+.txt-c .im04 {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
-  z-index: 2;
-  justify-content: flex-start;
   width: 70%;
-  margin-top: -60%;
   margin-left: -30%;
+}
+
+.box2 {
+  position: relative;
+  margin-top: 30%;
+  font-family: "hakgyoansimDunggeunmisoTTF-B";
+}
+.box2 .img03 {
+  position: absolute;
+  top: -190px;
+  left: 50%;
+  transform: translateX(200px);
+}
+.box2 .img05 {
+  width: 240px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-260%);
+}
+.box2 .img06 {
+  width: 240px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.box3 {
+  position: relative;
+  overflow: hidden;
+  margin-top: 300px;
+}
+.box3 .slide-box3 {
+  overflow: visible;
+  padding-bottom: 200px;
+}
+.box3 .lst-box3 {
+  display: flex;
+  max-width: 1280px;
+}
+.box3 .lst-box3 .swiper-slide {
+  position: relative;
+  transition: all 0.3s;
+}
+.box3 .lst-box3 .swiper-slide.swiper-slide-active {
+  transform: translateY(200px);
+}
+.box3 .lst-box3 .swiper-slide .txt-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+}
+.box3 .lst-box3 .swiper-slide .txt-area img {
+  display: block;
+  width: 100%;
+}
+.box3 .lst-box3 .swiper-slide .txt-area em {
+  display: inline-block;
+  border: 1px solid #000;
+}
+.box3 .lst-box3 .swiper-slide .txt-area strong {
+  display: block;
+}
+.box3 .lst-box3 .swiper-slide .txt-area p {
+  display: block;
+}
+.box3 .img04 {
+  position: absolute;
+  top: 0;
+  left: 0;
 }/*# sourceMappingURL=styles.css.map */

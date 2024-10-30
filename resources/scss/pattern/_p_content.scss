@@ -177,10 +177,6 @@
 .box1 {
   font-family : "hakgyoansimDunggeunmisoTTF-B";
 }
-.box2 {
-  font-family : "hakgyoansimDunggeunmisoTTF-B";
-  // overflow: hidden;
-}
 
 .txt-c {
   font-family : '//fonts.googleapis.com/earlyaccess/notosanskr.css';
@@ -227,9 +223,6 @@
   align-items: center;
 }
 
-.box2 {
-  padding-top: 30%;
-}
 
 .box2 .txt-t h2 {
   font-size: 40px;
@@ -309,25 +302,8 @@
   color: white;
 }
 
-.img03 {
-  display:flex;
-  justify-content: flex-end;
-  z-index: 5;
-  margin-top: -40%;
-  margin-left: 70%;
-}
 
-.img05 {
-  width: 240px;
-  margin-top: -40%;
-  margin-left: 11%;
-}
 
-.img06 {
-  width: 240px;
-  margin-top: -50%;
-  margin-left: 50%;
-}
 
 .cbox {
   box-sizing: border-box;
@@ -340,7 +316,13 @@
   background-color: $orange-10;
   color: white
 }
+
+.cardnews1 {
+  position: relative;
+}
+
 .ctxt02{
+  position: relative;
   font-weight: 500;
   z-index: 5;
   box-sizing: border-box;
@@ -351,6 +333,7 @@
   height: 641px;
   color: white;
 }
+
 // .cardnews1 .ctxt03{
 //   box-sizing: border-box;
 //   margin-top: -30%;
@@ -361,11 +344,85 @@
 //   background-color: aquamarine;
 // }
 
-.img04 {
+.txt-c .im04 {
+  position: absolute;
+  top: 0;
+  left: 0;
   display: flex;
-  z-index: 2;
-  justify-content: flex-start;
   width: 70%;
-  margin-top: -60%;
   margin-left:-30%;
+}
+
+
+.box2 {
+  position: relative;
+  margin-top: 30%;
+  font-family : "hakgyoansimDunggeunmisoTTF-B";
+  .img03 {
+    position: absolute;
+    top: -190px;
+    left: 50%;
+    transform: translateX(200px);
+  }
+  .img05 {
+    width: 240px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-260%);
+  }
+  .img06 {
+    width: 240px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+}
+
+.box3 {
+  position: relative;
+  overflow: hidden;
+  margin-top: 300px;
+  .slide-box3 {
+    overflow: visible;
+    padding-bottom: 200px;
+    
+  }
+  .lst-box3 {
+    display: flex;
+    padding-bottom: 200px;
+    .swiper-slide {
+      position: relative;
+      transition: all 0.3s;
+      &.swiper-slide-active {
+        transform: translateY(200px);
+      }
+      .txt-area {
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: $white;
+        img {
+          display: block;
+          width: 100%;
+        }
+        em {
+          display: inline-block;
+          border: 1px solid #000;
+        }
+        strong {
+          display: block;
+        }
+        p {
+          display: block;
+        }
+      }
+    }
+  }
+  .img04 {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
