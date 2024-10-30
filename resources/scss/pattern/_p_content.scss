@@ -4,6 +4,7 @@
 }
 // 전역 스타일
 .swiper {
+  z-index: 5;
   width: 100%;
   height: 100%;
   .swiper-slide {
@@ -178,6 +179,11 @@
 }
 .box2 {
   font-family : "hakgyoansimDunggeunmisoTTF-B";
+  // overflow: hidden;
+}
+
+.txt-c {
+  font-family : '//fonts.googleapis.com/earlyaccess/notosanskr.css';
 }
 
 .t01 {
@@ -221,6 +227,145 @@
   align-items: center;
 }
 
+.box2 {
+  padding-top: 30%;
+}
+
 .box2 .txt-t h2 {
-  font-size: 100px !important;
+  font-size: 40px;
+  color: $orange
+}
+
+
+.t02-1 {
+  margin-left: 1%;
+  font-size: 40px;
+  margin-top: 3%;
+  color: $gray-90;
+}
+
+.t02-2 {
+  margin-left: 1%;
+  font-size: 40px;
+  margin-top: 3%;
+  color: $gray-90;
+}
+
+.t03-1 {
+  margin-top: 2%;
+  font-size: 40px;
+  margin-left: 1%;
+  color: $gray-90;
+}
+
+.t04-1 {
+  margin-top: 2%;
+  font-size: 40px;
+  margin-left: 1%;
+  color: $gray-90;
+}
+
+.t04-2 {
+  margin-top: 2%;
+  font-size: 40px;
+  margin-left: 1%;
+  color: $gray-90;
+}
+
+.tp001 {
+  display: inline-flex;
+  position: relative;
+  z-index: 5;
+  margin-top:3%;
+  margin-left: 1%;
+  border-radius: 100px;
+  padding: 10px 40px;
+  font-size: 38px;
+  background: $orange-10;
+  color: white;
+}
+
+.tp002 {
+  display: inline-flex;
+  position: relative;
+  margin-top: 2%;
+  margin-left: 0%;
+  border-radius: 100px;
+  padding: 10px 40px;
+  font-size: 38px;
+  background-color: $orange;
+  color: white;
+}
+
+.tp003 {
+  display: inline-flex;
+  position: relative;
+  margin-top: 2%;
+  margin-left: 1%;
+  border-radius: 100px;
+  padding: 10px 40px;
+  font-size: 38px;
+  background-color: $orange-5;
+  color: white;
+}
+
+.img03 {
+  display:flex;
+  justify-content: flex-end;
+  z-index: 5;
+  margin-top: -40%;
+  margin-left: 70%;
+}
+
+.img05 {
+  width: 240px;
+  margin-top: -40%;
+  margin-left: 11%;
+}
+
+.img06 {
+  width: 240px;
+  margin-top: -50%;
+  margin-left: 50%;
+}
+
+.cbox {
+  box-sizing: border-box;
+  margin-top: -20%;
+  font-size: 30px;
+  z-index: 5;
+  width: 502px;
+  height: 641px;
+  border-radius: 55px;
+  background-color: $orange-10;
+  color: white
+}
+.ctxt02{
+  font-weight: 500;
+  z-index: 5;
+  box-sizing: border-box;
+  margin-top:-36%;
+  margin-left: 2%;
+  font-size: 30px;
+  width: 502px;
+  height: 641px;
+  color: white;
+}
+// .cardnews1 .ctxt03{
+//   box-sizing: border-box;
+//   margin-top: -30%;
+//   font-size: 2px;
+//   width: 502px;
+//   height: 641px;
+//   color: white;
+//   background-color: aquamarine;
+// }
+
+.img04 {
+  display: flex;
+  z-index: 2;
+  justify-content: flex-start;
+  width: 70%;
+  margin-top: -60%;
+  margin-left:-30%;
 }
