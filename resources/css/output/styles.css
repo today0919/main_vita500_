@@ -698,28 +698,30 @@ caption {
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-390%);
+  z-index: 3;
 }
 .sec-intro .t01 {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 450px;
+  right: 550px;
   transform: translate(-130%, -140%);
   font-size: 130px;
   color: #EE3212;
 }
 .sec-intro .t02 {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 350px;
+  right: 220px;
   transform: translate(-50%, -50%);
+  z-index: 2;
   font-size: 180px;
   color: white;
 }
 .sec-intro .t03 {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 550px;
+  left: 410px;
   transform: translate(-50%, -50%);
   font-size: 170px;
   z-index: 4;
@@ -727,8 +729,8 @@ caption {
 }
 .sec-intro .t04 {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 650px;
+  left: 1150px;
   transform: translate(-50%, -50%);
   z-index: 4;
   font-size: 130px;
