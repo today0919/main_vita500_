@@ -12,7 +12,8 @@
     position: absolute;
     bottom: 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-320px);
+    z-index: 3;
   }
 
   .t01 {
@@ -20,7 +21,7 @@
     top: 50%;
     left: 50%;
     // px 단위로 변경
-    transform: translate(-130%, -140%);
+    transform: translate(-560px, -230px);
     font-size: 130px;
     color: $orange-5;
   }
@@ -28,16 +29,17 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(100px, -200px);
     font-size: 180px;
     color: white;
+    z-index: 2;
   }
   .t03 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 170px;
+    transform: translate(-690px, 40px);
+    font-size: 140px;
     z-index: 4;
     color: white;
   }
@@ -45,9 +47,9 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(130px, 140px);
     z-index: 4;
-    font-size: 130px;
+    font-size: 110px;
     color: $orange-5;
   }
 }
@@ -56,24 +58,27 @@
   position: relative;
   margin-top: 200px;
   font-family: "hakgyoansimDunggeunmisoTTF-B";
+
   .img03 {
     position: absolute;
-    top: -190px;
+    width: 800px;
+    top: -220px;
     left: 50%;
-    transform: translateX(200px);
+    transform: translateX(400px);
   }
   .img05 {
-    width: 240px;
+    width: 180px;
     position: absolute;
-    top: 0;
+    top: 100px;
     left: 50%;
-    transform: translateX(-260%);
+    transform: translateX(-580px);
   }
   .img06 {
-    width: 240px;
+    width: 180px;
     position: absolute;
-    top: 0;
+    top: -50px;
     right: 0;
+    transform: translateX(-220px);
   }
 
   .txt-group {
@@ -164,8 +169,11 @@
 }
 
 .sec-service {
+
 }
 .sec-ad {
+  
 }
 .sec-connected {
+  
 }
